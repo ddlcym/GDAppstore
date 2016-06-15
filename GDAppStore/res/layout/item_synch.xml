@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="120dp"
+    android:background="@drawable/bg_synchitem" >
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="80dp"
+        android:layout_height="87dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_icon" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_icon" >
+
+        <TextView
+            android:id="@+id/tv_appname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <com.changhong.gdappstore.view.ScoreView
+            android:id="@+id/view_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@id/tv_appname"
+            android:layout_below="@id/tv_appname" />
+
+        <TextView
+            android:id="@+id/tv_size_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_appname"
+            android:layout_below="@id/view_score"
+            android:layout_marginTop="5dp"
+            android:text="@string/size"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_size_title"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_size_title"
+            android:text="0.0"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_synchtype"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/lug_img_backuped"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/img_check"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     <RelativeLayout
+        android:id="@+id/rl_othercategory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:paddingTop="0dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/iv_otc_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:focusable="false"
+            android:scaleType="fitXY"
+            android:layout_above="@+id/tv_otc_name"
+            android:visibility="invisible"
+            android:src="@drawable/img_normal_square_cicle" />
+
+        <TextView
+            android:id="@+id/tv_otc_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/img_mainapp_bg1"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

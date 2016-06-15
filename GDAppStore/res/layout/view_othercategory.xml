@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_othercat_categroys"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal" >
+
+        <com.changhong.gdappstore.view.OtherCategoryItemView
+            android:id="@+id/othercat_item1"
+            android:layout_width="@dimen/item_otc_width1"
+            android:layout_height="@dimen/item_otc_height1"
+            android:layout_marginTop="@dimen/item_first_margintop"
+            android:background="@color/otc_purple" />
+
+        <com.changhong.gdappstore.view.OtherCategoryItemView
+            android:id="@+id/othercat_item2"
+            android:layout_width="@dimen/item_otc_width1"
+            android:layout_height="@dimen/item_otc_height1"
+            android:layout_alignLeft="@id/othercat_item1"
+            android:layout_below="@id/othercat_item1"
+            android:layout_marginTop="@dimen/item_otc_margintop"
+            android:background="@color/otc_yellow" />
+
+        <com.changhong.gdappstore.view.OtherCategoryItemView
+            android:id="@+id/othercat_item3"
+            android:layout_width="@dimen/item_otc_width1"
+            android:layout_height="@dimen/item_otc_height1"
+            android:layout_alignTop="@id/othercat_item1"
+            android:layout_marginLeft="@dimen/item_otc_margintop"
+            android:layout_toRightOf="@id/othercat_item1"
+            android:background="@color/otc_green" />
+
+        <com.changhong.gdappstore.view.OtherCategoryItemView
+            android:id="@+id/othercat_item4"
+            android:layout_width="@dimen/item_otc_width2"
+            android:layout_height="@dimen/item_otc_height2"
+            android:layout_alignLeft="@id/othercat_item3"
+            android:layout_below="@id/othercat_item3"
+            android:layout_marginTop="@dimen/item_otc_margintop"
+            android:background="@color/otc_lightred" />
+
+        <com.changhong.gdappstore.view.OtherCategoryItemView
+            android:id="@+id/othercat_item5"
+            android:layout_width="@dimen/item_otc_width2"
+            android:layout_height="@dimen/item_otc_height2"
+            android:layout_alignTop="@id/othercat_item1"
+            android:layout_marginLeft="@dimen/item_otc_margintop"
+            android:layout_toRightOf="@id/othercat_item3"
+            android:background="@color/otc_orange" />
+
+        <com.changhong.gdappstore.view.OtherCategoryItemView
+            android:id="@+id/othercat_item6"
+            android:layout_width="@dimen/item_otc_width1"
+            android:layout_height="@dimen/item_otc_height1"
+            android:layout_alignTop="@id/othercat_item4"
+            android:layout_marginLeft="@dimen/item_otc_margintop"
+            android:layout_toRightOf="@id/othercat_item4"
+            android:background="@color/otc_blue" />
+
+        <com.changhong.gdappstore.view.OtherCategoryItemView
+            android:id="@+id/othercat_item7"
+            android:layout_width="@dimen/item_otc_width1"
+            android:layout_height="@dimen/item_otc_height1"
+            android:layout_alignTop="@id/othercat_item5"
+            android:layout_marginLeft="@dimen/item_otc_margintop"
+            android:layout_toRightOf="@id/othercat_item5"
+            android:background="@color/otc_lightred" />
+
+        <com.changhong.gdappstore.view.OtherCategoryItemView
+            android:id="@+id/othercat_item8"
+            android:layout_width="@dimen/item_otc_width2"
+            android:layout_height="@dimen/item_otc_height2"
+            android:layout_alignLeft="@id/othercat_item7"
+            android:layout_below="@id/othercat_item7"
+            android:layout_marginTop="@dimen/item_otc_margintop"
+            android:background="@color/otc_purple" />
+
+        <com.changhong.gdappstore.view.OtherCategoryItemView
+            android:id="@+id/othercat_item9"
+            android:layout_width="@dimen/item_otc_width2"
+            android:layout_height="@dimen/item_otc_height2"
+            android:layout_alignTop="@id/othercat_item7"
+            android:layout_marginLeft="@dimen/item_otc_margintop"
+            android:layout_toRightOf="@id/othercat_item7"
+            android:background="@color/otc_green" />
+
+        <com.changhong.gdappstore.view.OtherCategoryItemView
+            android:id="@+id/othercat_item10"
+            android:layout_width="@dimen/item_otc_width1"
+            android:layout_height="@dimen/item_otc_height1"
+            android:layout_alignTop="@id/othercat_item8"
+            android:layout_marginLeft="@dimen/item_otc_margintop"
+            android:layout_toRightOf="@id/othercat_item8"
+            android:background="@color/otc_orange" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_shandow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/rl_othercat_categroys"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/rl_othercat_categroys"
+        android:layout_marginBottom="70dp"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_shandow1"
+            android:layout_width="@dimen/item_otc_width1"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_normal_square_cicle" />
+
+        <ImageView
+            android:id="@+id/iv_shandow2"
+            android:layout_width="@dimen/item_otc_width2"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/item_otc_margintop"
+            android:layout_toRightOf="@id/iv_shandow1"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_normal_square_cicle" />
+
+        <ImageView
+            android:id="@+id/iv_shandow3"
+            android:layout_width="@dimen/item_otc_width1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/item_otc_margintop"
+            android:layout_toRightOf="@id/iv_shandow2"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_normal_square_cicle" />
+
+        <ImageView
+            android:id="@+id/iv_shandow4"
+            android:layout_width="@dimen/item_otc_width2"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/item_otc_margintop"
+            android:layout_toRightOf="@+id/iv_shandow3"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_normal_square_cicle" />
+
+        <ImageView
+            android:id="@+id/iv_shandow5"
+            android:layout_width="@dimen/item_otc_width1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_otc_margintop"
+            android:layout_toRightOf="@+id/iv_shandow4"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_normal_square_cicle" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_othercat_focues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main" >
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_title_height"
+        android:background="@drawable/bg_maintitle" >
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/iv_logo_marginleft"
+            android:src="@drawable/img_logo" />
+
+        <TextView
+            android:id="@+id/tv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_logo"
+            android:layout_alignTop="@id/iv_logo"
+            android:layout_marginLeft="@dimen/tv_logo_marginleft"
+            android:layout_toRightOf="@id/iv_logo"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_logo_textsize" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="90dp"
+        android:text="@string/yuntongbu"
+        android:textColor="@color/white"
+        android:textSize="28dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_synch_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="185dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_backup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_square_focues"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/iv_icon_backup"
+                android:layout_width="@dimen/iv_synch_home_itemwidth"
+                android:layout_height="415dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_bg_backup" >
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="230dp"
+                android:text="@string/backup"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/tv_synch_home_suggest_margintop"
+                android:text="@string/post_nativeapps"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_synch_home_suggest_textsize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_recover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/rl_backup"
+            android:layout_marginLeft="@dimen/rl_synch_home_marginleft"
+            android:layout_toRightOf="@id/rl_backup"
+            android:background="@drawable/selector_square_focues"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/iv_icon_recover"
+                android:layout_width="@dimen/iv_synch_home_itemwidth"
+                android:layout_height="415dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_bg_recover" >
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="230dp"
+                android:text="@string/recovery"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/tv_synch_home_suggest_margintop"
+                android:text="@string/recover_serverapps"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_synch_home_suggest_textsize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/rl_backup"
+            android:layout_marginLeft="@dimen/rl_synch_home_marginleft"
+            android:layout_toRightOf="@id/rl_recover"
+            android:background="@drawable/selector_square_focues"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/iv_icon_manage"
+                android:layout_width="@dimen/iv_synch_home_itemwidth"
+                android:layout_height="415dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_bg_manage" >
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="230dp"
+                android:text="@string/manage"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/tv_synch_home_suggest_margintop"
+                android:text="@string/manage_serverapps"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_synch_home_suggest_textsize" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sync_shandow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_synch_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_sync_shandow1"
+            android:layout_width="@dimen/iv_synch_home_itemwidth"
+            android:layout_height="94dp"
+            android:src="@drawable/img_shandow_backup" />
+
+        <ImageView
+            android:id="@+id/iv_sync_shandow2"
+            android:layout_width="@dimen/iv_synch_home_itemwidth"
+            android:layout_height="94dp"
+            android:layout_alignTop="@id/iv_sync_shandow1"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@id/iv_sync_shandow1"
+            android:src="@drawable/img_shandow_recover" />
+
+        <ImageView
+            android:id="@+id/iv_sync_shandow3"
+            android:layout_width="@dimen/iv_synch_home_itemwidth"
+            android:layout_height="94dp"
+            android:layout_alignTop="@id/iv_sync_shandow1"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@id/iv_sync_shandow2"
+            android:src="@drawable/img_shandow_manage" />
+    </RelativeLayout>
+
+</RelativeLayout>

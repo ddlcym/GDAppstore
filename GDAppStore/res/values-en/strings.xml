@@ -1,0 +1,108 @@
+<resources>
+
+    <string name="app_name">YuppStore</string>
+    <!-- 主页 -->
+    <string name="homepage">Home</string>
+    <string name="zhuanti">Topic</string>
+    <string name="all">ALL</string>
+    <string name="sure_exit_appstore">Confirm exit?</string>
+    <string name="checked_newversion">New version found</string>
+    <string name="update_now">Update now</string>
+    <string name="update_nexttime">Not now</string>
+    <string name="search">Search</string>
+    <string name="rank_list">Popular List </string>
+    <string name="nativeapp">App Native</string>
+    <string name="yuntongbu">Cloud Service</string>
+
+    <!-- 本地应用 -->
+    <string name="uninstall_app">Uninstall</string>
+    <string name="uninstall_commit">Confirm</string>
+    <string name="sure_uninstall_apps">Do you want to uninstall these apps</string>
+    <string name="uninstalling_background">Uninstalling in the background</string>
+    <string name="cannot_uninstall_self">Can not uninstall yourself</string>
+    <string name="app_started">This app already started</string>
+    <string name="appstartfailed_pleasecheck">Launch failed</string>
+
+    <!-- 搜索 -->
+    <string name="search_tips">Search tips：</string>
+    <string name="searched">Searched</string>
+    <string name="hotapps">Hotest apps</string>
+    <string name="app">app</string>
+    <string name="apps">apps</string>
+    <string name="myapps">My Apps</string>
+    <!--  -->
+    <string name="str_download">Downloads：</string>
+    <string name="str_size">Size：</string>
+    <string name="net_disconnected_pleasecheck">Network disconnected,please check the network</string>
+    <string name="weipeizhi">No data</string>
+    <string name="str_new">NEWEST</string>
+    <string name="str_hot">HOTEST</string>
+    <string name="str_surge">FASTEST-GROWING</string>
+    <string name="tv_search_tishi">You can search out apps by input full name or short name of app.\n For example: \n App Name: \"Google Play App\", you can input \"google play*\" or \"googleplay*\" or \"GP\" to find it out</string>
+    <string name="tishi">Notice：&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="sure_space">Confirm</string>
+    <string name="cancel">cancle</string>
+    <string name="cancel_space">Cancel</string>
+    <string name="dataloading">Loading...</string>
+    <string name="download_background">Hide</string>
+    <string name="cur_download_progress">Current progress：</string>
+
+    <!-- 错误信息提示 -->
+    <string name="error_net_notconnect">Network disconnected</string>
+    <string name="error_netconnect_timeout">Network connect timeout</string>
+    <string name="error_netconnect">Network connect exception</string>
+    <string name="error_parse">Data parse exception</string>
+    <string name="please_checknet">Please check your network</string>
+    <string name="error_netconnect_please_checknet">Abnormal network connection, please check the network</string>
+    <string name="net_connected">Network connected</string>
+    <string name="net_disconnect">Network disconnected</string>
+
+    <!-- 详情页面 -->
+    <string name="hasapp_isloading">You already start one download, please try later</string>
+    <string name="sure_download_app">Do you want to download this app?</string>
+    <string name="sure_update_app">Do you want to update this app?</string>
+    <string name="downloading">Downloading</string>
+    <string name="downloadfailed">download failed</string>
+    <string name="downloadover">Download completed</string>
+    <string name="downloadover_installing">Download completed,installing...</string>
+    <string name="install_success"> install success</string>
+    <string name="install_failed"> install failed</string>
+    <string name="uninstall_success"> uninstall success</string>
+    <string name="uninstall_failed"> uninstall failed</string>
+    <string name="appisundershelf">No stock</string>
+    <string name="downloads">Downloads：</string>
+    <string name="version">Version：</string>
+    <string name="updatetime">Update Time：</string>
+    <string name="size">Size：</string>
+    <string name="description">Description：</string>
+    <string name="similar_apps">Similar Apps：</string>
+    <string name="uninstall_apps">uninstall</string>
+    <string name="ge"></string>
+    <string name="notvipuser_cannotdownload">You are not vip member or your vip level is not enough, please contact yupptv for more vip details.</string>
+    <!-- 云同步功能 -->
+    <string name="backup">Backup</string>
+    <string name="recovery">Recovery</string>
+    <string name="manage">Manage</string>
+    <string name="batch_backup">Bulk backup</string>
+    <string name="confirm_backup">Confirm Backup</string>
+    <string name="batch_recovery">Bulk recovery</string>
+    <string name="confirm_recover">Confirm recovery</string>
+    <string name="batch_delete">Bulk delete</string>
+    <string name="confirm_delete">Confirm delete</string>
+    <string name="post_nativeapps">Upload installed apps to cloud</string>
+    <string name="recover_serverapps">Restore app from cloud</string>
+    <string name="manage_serverapps">Manage apps on the cloud</string>
+    <string name="selected">selected</string>
+    <string name="noapps_cando">There is no app can do</string>
+    <string name="dobatchbyclickmenu">Batch operation by press menu key</string>
+    <string name="sure_deletebackedapps">Do you want to delete these apps?</string>
+    <string name="app_already_indownloadlist">This app is already in download list</string>
+    <string name="addin_downloadlist_success">Add to download list success</string>
+
+    <string name="installed">Installed</string>
+    <string name="installedNow">Install Now</string>
+    <string name="New">New</string>
+
+
+    <string name="noaccess">You don\'t have authentication to access app store!</string>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_postshandow"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:src="@drawable/img_postshandow" />
+
+    <RelativeLayout
+        android:id="@+id/rl_postcontent"
+        android:layout_width="328dp"
+        android:layout_height="125dp"
+        android:background="@drawable/bg_itempost" >
+
+        <ImageView
+            android:id="@+id/iv_appicon"
+            android:layout_width="@dimen/iv_appicon_width"
+            android:layout_height="@dimen/iv_appicon_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_normal_square_cicle" />
+
+        <TextView
+            android:id="@+id/tv_appname"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_appicon"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_appicon"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tv_apksize_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_appname"
+            android:layout_below="@id/tv_appname"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/size"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_apksize"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_apksize_title"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_apksize_title"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <com.changhong.gdappstore.view.ScoreView
+            android:id="@+id/scoreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_apksize_title"
+            android:layout_below="@id/tv_apksize_title" />
+        
+         <ImageView
+            android:id="@+id/iv_recommend"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:scaleType="fitXY"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/lug_img_recommend" />
+    </RelativeLayout>
+
+</RelativeLayout>

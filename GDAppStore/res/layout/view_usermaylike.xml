@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="true"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_usermaylike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="true"
+        >
+
+        <com.changhong.gdappstore.view.PageItemView
+            android:id="@+id/usermaylike_item0"
+            android:layout_width="@dimen/item_usermaylike_width"
+            android:layout_height="@dimen/item_usermaylike_height"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <com.changhong.gdappstore.view.PageItemView
+            android:id="@+id/usermaylike_item1"
+            android:layout_width="@dimen/item_usermaylike_width"
+            android:layout_height="@dimen/item_usermaylike_height"
+            android:layout_alignTop="@id/usermaylike_item0"
+            android:layout_marginLeft="@dimen/item_usermaylike_marginleft"
+            android:layout_toRightOf="@id/usermaylike_item0"
+            />
+
+        <com.changhong.gdappstore.view.PageItemView
+            android:id="@+id/usermaylike_item2"
+            android:layout_width="@dimen/item_usermaylike_width"
+            android:layout_height="@dimen/item_usermaylike_height"
+            android:layout_alignTop="@id/usermaylike_item0"
+            android:layout_marginLeft="@dimen/item_usermaylike_marginleft"
+            android:layout_toRightOf="@id/usermaylike_item1"
+            />
+
+        <com.changhong.gdappstore.view.PageItemView
+            android:id="@+id/usermaylike_item3"
+            android:layout_width="@dimen/item_usermaylike_width"
+            android:layout_height="@dimen/item_usermaylike_height"
+            android:layout_alignTop="@id/usermaylike_item0"
+            android:layout_marginLeft="@dimen/item_usermaylike_marginleft"
+            android:layout_toRightOf="@id/usermaylike_item2"
+            />
+
+        <com.changhong.gdappstore.view.PageItemView
+            android:id="@+id/usermaylike_item4"
+            android:layout_width="@dimen/item_usermaylike_width"
+            android:layout_height="@dimen/item_usermaylike_height"
+            android:layout_alignTop="@id/usermaylike_item0"
+            android:layout_marginLeft="@dimen/item_usermaylike_marginleft"
+            android:layout_toRightOf="@id/usermaylike_item3"
+            />
+
+        <com.changhong.gdappstore.view.PageItemView
+            android:id="@+id/usermaylike_item5"
+            android:layout_width="@dimen/item_usermaylike_width"
+            android:layout_height="@dimen/item_usermaylike_height"
+            android:layout_alignTop="@id/usermaylike_item0"
+            android:layout_marginLeft="@dimen/item_usermaylike_marginleft"
+            android:layout_toRightOf="@id/usermaylike_item4"
+            />
+
+        <com.changhong.gdappstore.view.PageItemView
+            android:id="@+id/usermaylike_item6"
+            android:layout_width="@dimen/item_usermaylike_width"
+            android:layout_height="@dimen/item_usermaylike_height"
+            android:layout_alignTop="@id/usermaylike_item0"
+            android:layout_marginLeft="@dimen/item_usermaylike_marginleft"
+            android:layout_toRightOf="@id/usermaylike_item5"
+            />
+
+        <com.changhong.gdappstore.view.PageItemView
+            android:id="@+id/usermaylike_item7"
+            android:layout_width="@dimen/item_usermaylike_width"
+            android:layout_height="@dimen/item_usermaylike_height"
+            android:layout_alignTop="@id/usermaylike_item0"
+            android:layout_marginLeft="@dimen/item_usermaylike_marginleft"
+            android:layout_toRightOf="@id/usermaylike_item6"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_detail_focues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="invisible" />
+
+</RelativeLayout>

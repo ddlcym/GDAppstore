@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main" >
+
+    <RelativeLayout
+        android:id="@+id/rl_pageheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pageheader_margintop" >
+
+        <TextView
+            android:id="@+id/tv_pagename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pagename_marginleft"
+            android:focusable="false"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/pagename_textsize" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_pagename"
+            android:layout_marginRight="85dp"
+            android:background="@drawable/selector_bg_btn_search"
+            android:focusable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/lug_btn_search" />
+    </RelativeLayout>
+
+    <com.changhong.gdappstore.view.PostTitleView
+        android:id="@+id/posttitleview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_pageheader"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="250dp"
+        android:layout_marginTop="0dp"
+        android:minHeight="60dp" />
+
+    <com.changhong.gdappstore.post.PosterLayoutView
+        android:id="@+id/postview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/posttitleview"
+        android:layout_marginBottom="-100dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/postview"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginRight="93dp"
+        android:focusable="false"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

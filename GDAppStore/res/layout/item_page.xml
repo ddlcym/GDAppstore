@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 大海报 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_postitem_bigpost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/iv_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_normal_square_cicle" />
+
+        <TextView
+            android:id="@+id/tv_postname"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black_half80"
+            android:focusable="false"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:visibility="invisible"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize_home_appname" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_postitem_apppost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:paddingTop="10dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/iv_appicon"
+            android:layout_width="67dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/tv_appname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:adjustViewBounds="true"
+            android:focusable="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_normal_square_cicle" />
+
+        <TextView
+            android:id="@+id/tv_appname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            android:background="@color/transparent"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="3dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize_home_appname" />
+        <ImageView
+            android:id="@+id/iv_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/lug_img_recommend" />
+    </RelativeLayout>
+     <RelativeLayout
+        android:id="@+id/rl_postitem_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/iv_categoryicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:focusable="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_normal_square_cicle" />
+
+        <TextView
+            android:id="@+id/tv_categoryname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:background="@color/transparent"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:gravity="right"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

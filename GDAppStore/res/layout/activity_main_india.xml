@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:background="@drawable/bg_main">
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="15%"
+        android:layout_marginTop="8dp"
+        android:clipChildren="false"
+        >
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/yupptv_store"
+            app:layout_heightPercent="40%"
+            app:layout_widthPercent="15%"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="64dp"
+            android:layout_marginBottom="8dp"
+            />
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="60%"
+            app:layout_widthPercent="5%"
+            android:focusable="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/ranking_list"
+            android:background="@color/transparent"
+            android:src="@drawable/btn_search"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@id/ranking_list"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/btn_ranklist"
+            android:focusable="true"
+            android:layout_marginRight="32dp"
+            android:layout_alignParentRight="true"
+            app:layout_heightPercent="60%"
+            app:layout_widthPercent="5%"
+            android:paddingTop="17dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="17dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:scaleType="fitXY" />
+    </android.support.percent.PercentRelativeLayout>
+
+
+    <com.changhong.gdappstore.view.FrontViewViewPager
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/title"
+        app:layout_heightPercent="30%"
+        android:clipChildren="false"
+        android:focusable="false"
+        android:visibility="gone"
+        />
+
+    <com.changhong.gdappstore.view.TabLayoutFullView
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layoutMode="opticalBounds"
+        app:tabBackground="@color/transparent"
+        app:tabTextColor="@color/Grey_500"
+        app:tabSelectedTextColor="#f78e1b"
+        app:tabIndicatorColor="#f78e1b" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@id/tabs"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="88dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="afterDescendants"/>
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myButton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/tools"
+    android:background="@drawable/bg_main">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/yupptv_store"
+        android:layout_marginLeft="73dp"
+        />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/rl_detailcontent"
+        android:layout_width="550dp"
+        android:layout_height="330dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginTop="90dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <RelativeLayout
+            android:id="@+id/rl_detailheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp" >
+
+            <ImageView
+                android:id="@+id/iv_detailicon"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_normal_square_cicle" />
+
+            <ImageView
+                android:id="@+id/iv_isvip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/iv_detailicon"
+                android:layout_alignTop="@id/iv_detailicon"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_vip"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_appname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="0dp"
+                android:layout_toRightOf="@id/iv_detailicon"
+                android:ellipsize="marquee"
+                android:typeface="sans"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="33sp" />
+
+            <TextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="0dp"
+                android:layout_toRightOf="@id/iv_detailicon"
+                android:layout_below="@id/tv_appname"
+                android:typeface="sans"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="My facebook,Inc"
+                android:textColor="@color/detail_content_title_textcolor"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/rl_detailheader"
+            android:layout_below="@id/rl_detailheader"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:id="@+id/tv_version_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/version"
+                android:textColor="@color/detail_content_title_textcolor"
+                android:textSize="@dimen/detail_contenttextsize" />
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_version_title"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@id/tv_version_title"
+                android:text="0.0"
+                android:textColor="@color/detail_content_textcolor"
+                android:textSize="@dimen/detail_contenttextsize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_apksize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ll_version"
+            android:layout_marginLeft="@dimen/detail_content_textmarginleft"
+            android:layout_toRightOf="@id/ll_version" >
+
+            <TextView
+                android:id="@+id/tv_appsize_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/size"
+                android:textColor="@color/detail_content_title_textcolor"
+                android:textSize="@dimen/detail_contenttextsize" />
+
+            <TextView
+                android:id="@+id/tv_appsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@id/tv_appsize_title"
+                android:text="0.0M"
+                android:textColor="@color/detail_content_textcolor"
+                android:textSize="@dimen/detail_contenttextsize" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_btns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/rl_detailheader"
+            android:layout_below="@id/ll_version"
+            android:layout_marginTop="8dp" >
+
+            <com.changhong.gdappstore.view.MyButton
+                android:id="@+id/bt_download"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:typeface="sans"
+                android:focusable="true"
+                android:scaleType="fitXY"
+                myButton:mybtn_radius="4dp"
+                myButton:mybtn_solidColor="@color/transparent"
+                myButton:mybtn_solidColor_selected="@color/bt_detail_selectsolidcolor"
+                myButton:mybtn_stokeColor="@color/black_half20"
+                myButton:mybtn_strokeWidth="1dp"
+                myButton:mybtn_text="Download"
+                myButton:mybtn_textColor="@color/bt_detail_normaltextcolor"
+                myButton:mybtn_textColor_selected="@color/bt_detail_selectedtextcolor"
+                myButton:mybtn_textSize="20sp" />
+
+            <com.changhong.gdappstore.view.MyButton
+                android:id="@+id/bt_start"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:typeface="sans"
+                android:focusable="true"
+                android:scaleType="fitXY"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                myButton:mybtn_radius="4dp"
+                myButton:mybtn_solidColor="@color/transparent"
+                myButton:mybtn_solidColor_selected="@color/bt_detail_selectsolidcolor"
+                myButton:mybtn_stokeColor="@color/black_half20"
+                myButton:mybtn_strokeWidth="1dp"
+                myButton:mybtn_text="Open"
+                myButton:mybtn_textColor="@color/bt_detail_normaltextcolor"
+                myButton:mybtn_textColor_selected="@color/bt_detail_selectedtextcolor"
+                myButton:mybtn_textSize="20sp" />
+
+            <com.changhong.gdappstore.view.MyButton
+                android:id="@+id/bt_uninstall"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:typeface="sans"
+                android:focusable="true"
+                android:scaleType="fitXY"
+                myButton:mybtn_radius="4dp"
+                myButton:mybtn_solidColor="@color/transparent"
+                myButton:mybtn_solidColor_selected="@color/bt_detail_selectsolidcolor"
+                myButton:mybtn_stokeColor="@color/black_half20"
+                myButton:mybtn_strokeWidth="1dp"
+                myButton:mybtn_text="Uninstall"
+                myButton:mybtn_textColor="@color/bt_detail_normaltextcolor"
+                myButton:mybtn_textColor_selected="@color/bt_detail_selectedtextcolor"
+                myButton:mybtn_textSize="20sp" />
+
+            <com.changhong.gdappstore.view.MyButton
+                android:id="@+id/bt_update"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:focusable="true"
+                android:scaleType="fitXY"
+                android:typeface="sans"
+                myButton:mybtn_radius="4dp"
+                myButton:mybtn_solidColor="@color/transparent"
+                myButton:mybtn_solidColor_selected="@color/bt_detail_selectsolidcolor"
+                myButton:mybtn_stokeColor="@color/black_half20"
+                myButton:mybtn_strokeWidth="1dp"
+                myButton:mybtn_text="Update"
+                myButton:mybtn_textColor="@color/bt_detail_normaltextcolor"
+                myButton:mybtn_textColor_selected="@color/bt_detail_selectedtextcolor"
+                myButton:mybtn_textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_downshelf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="1dp"
+                android:gravity="center_vertical"
+                android:text="@string/appisundershelf"
+                android:textColor="@color/Grey_500"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rl_detailappcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/rl_detailheader"
+            android:layout_below="@id/ll_btns"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:id="@+id/tv_introduce_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_content_rowmargintop"
+                android:text="@string/description"
+                android:typeface="sans"
+                android:textColor="#444547"
+                android:textSize="26sp" />
+
+            <com.changhong.gdappstore.view.JustifyTextView
+                android:id="@+id/tv_introduce"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_introduce_title"
+                android:typeface="sans"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:text=""
+                android:textColor="#999591"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/rl_detailpost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/rl_detailcontent"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/rl_detailcontent"
+        android:layout_marginRight="76dp"
+        android:layout_alignBottom="@id/rl_detailcontent">
+    <RelativeLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+        android:layout_margin="8dp">
+        <ImageView
+            android:id="@+id/iv_detailpost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_normal_square_cicle" />
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_usermaylike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rl_detailcontent"
+        android:layout_below="@id/rl_detailcontent"
+        android:layout_marginTop="@dimen/detail_content_rowmargintop"
+        android:maxLines="2"
+        android:typeface="sans"
+        android:text="@string/similar_apps"
+        android:textColor="@color/black"
+        android:textSize="@dimen/detail_contenttextsize" />
+
+    <com.changhong.gdappstore.view.UserMayLikeView
+        android:id="@+id/view_usermaylike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_usermaylike"
+        android:layout_marginLeft="55dp" />
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_postitem_apppost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true" >
+
+    <ImageView
+        android:id="@+id/iv_appicon"
+        android:layout_width="122dp"
+        android:layout_height="122dp"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:scaleType="fitXY"
+        android:background="@drawable/selector_shadow_bg"/>
+
+    <TextView
+        android:id="@id/tv_appname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="marquee"
+        android:focusable="false"
+        android:gravity="center_horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:requiresFadingEdge="horizontal"
+        android:paddingBottom="5dp"
+        android:lines="1"
+        android:singleLine="true"
+        android:fadingEdge="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:textSize="@dimen/txtsize_home_appname"
+        />
+    <ImageView
+        android:id="@+id/iv_recommend"
+        android:layout_width="75dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/lug_img_recommend"
+        android:visibility="invisible" />
+
+</RelativeLayout>

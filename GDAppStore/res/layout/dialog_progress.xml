@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myButton="http://schemas.android.com/apk/res/com.changhong.gdappstore"
+    android:layout_width="600dp"
+    android:layout_height="200dp"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="1dp" >
+
+        <ImageView
+            android:id="@+id/iv_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/iv_dialog_title_margintop"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:typeface="sans"
+            android:singleLine="true"
+            android:text="@string/cur_download_progress"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dialog_title_textsize" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_dialog_dilver"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@+id/rl_dialog_title"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_prodia_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_btns"
+        android:layout_below="@id/iv_dialog_dilver"
+        android:gravity="center_vertical"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/rl_progress"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/bg_seekbar" >
+
+            <SeekBar
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_progress"
+                android:focusable="false"
+                android:layout_centerInParent="true"
+                android:focusableInTouchMode="false"
+                android:progress="0"
+                android:progressDrawable="@drawable/layer_progressbar"
+                android:padding="0dp"
+                android:thumb="@color/transparent" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_progress_hundread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/rl_progress"
+            android:layout_alignBottom="@id/rl_progress"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:typeface="sans"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_progress_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="sans"
+            android:layout_below="@id/rl_progress"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <com.changhong.gdappstore.view.MyButton
+            android:id="@+id/bt_loadbackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_btn_height"
+            android:focusable="true"
+            android:gravity="center"
+            myButton:mybtn_radius="1dp"
+            myButton:mybtn_solidColor="@color/transparent"
+            myButton:mybtn_solidColor_selected="@color/bt_detail_selectsolidcolor"
+            myButton:mybtn_stokeColor="@color/black_half20"
+            android:typeface="sans"
+            myButton:mybtn_text="@string/download_background"
+            myButton:mybtn_textColor="@color/bt_detail_normaltextcolor"
+            myButton:mybtn_textColor_selected="@color/bt_detail_selectedtextcolor"
+            myButton:mybtn_textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

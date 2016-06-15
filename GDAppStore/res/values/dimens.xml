@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 标题 -->
+    <dimen name="ll_title_height">69dp</dimen>
+    <dimen name="iv_logo_marginleft">30dp</dimen>
+    <dimen name="tv_logo_textsize">22sp</dimen>
+    <dimen name="tv_logo_marginleft">10dp</dimen>
+
+    <!-- 一级页面推荐位 -->
+    <dimen name="item_square1_width">240dp</dimen>
+    <dimen name="item_square1_height">100dp</dimen>
+    <dimen name="item_square2_width">193dp</dimen>
+    <dimen name="item_square2_height">135dp</dimen>
+    <dimen name="item_square1_margintop">5dp</dimen>
+    <dimen name="item_square2_marginleft">5dp</dimen>
+    <dimen name="item_big1_width">342dp</dimen>
+    <dimen name="item_big1_height">205dp</dimen>
+    <dimen name="item_big2_width">169dp</dimen>
+    <dimen name="item_big2_height">100dp</dimen>
+    <dimen name="item_first_margintop">35dp</dimen>
+    <dimen name="txtsize_home_appname">20sp</dimen>
+    <dimen name="txtsize_home_categoryname">22sp</dimen>
+    <!-- 一级页面 “其它”页面 -->
+    <dimen name="item_otc_width1">240dp</dimen>
+    <dimen name="item_otc_height1">180dp</dimen>
+    <dimen name="item_otc_width2">240dp</dimen>
+    <dimen name="item_otc_height2">180dp</dimen>
+    <dimen name="item_otc_margintop">13dp</dimen>
+    <dimen name="item_otc_marginleft">8dp</dimen>
+     <!-- 一级页面 “专题”页面 -->
+    <dimen name="item_topic_width1">260dp</dimen>
+    <dimen name="item_topic_height1">200dp</dimen>
+    <dimen name="item_topic_margintop">-40dp</dimen>
+    <dimen name="item_topic_marginleft">-50dp</dimen>
+
+    <!-- 搜索页面 -->
+    <dimen name="bt_search_width">112.4dp</dimen>
+    <dimen name="bt_search_height">55dp</dimen>
+    <dimen name="bt_keybord_margin">1dp</dimen>
+    <dimen name="bt_keybord_width">55dp</dimen>
+    <dimen name="searchpage_marginleft_right">113dp</dimen>
+
+    <!-- 海报墙页面 -->
+    <dimen name="pageheader_margintop">60dp</dimen>
+    <dimen name="pagename_textsize">30sp</dimen>
+    <dimen name="pagename_marginleft">130dp</dimen>
+    <dimen name="iv_shandow_width">335dp</dimen>
+    <dimen name="iv_shandow_marginleft">30dp</dimen>
+    <!-- 海报item -->
+    <dimen name="iv_appicon_width">95dp</dimen>
+    <dimen name="iv_appicon_height">95dp</dimen>
+
+    <!-- 详情页面 -->
+    <dimen name="detail_contenttextsize">26sp</dimen>
+    <dimen name="detail_content_rowmargintop">5dp</dimen>
+    <dimen name="detail_content_textmarginleft">20dp</dimen>
+    <dimen name="item_usermaylike_width">122dp</dimen>
+    <dimen name="item_usermaylike_height">150dp</dimen>
+    <dimen name="item_usermaylike_marginleft">0dp</dimen>
+
+    <!-- 对话框 -->
+    <dimen name="dialog_title_textsize">24sp</dimen>
+    <dimen name="dialog_content_textsize">20sp</dimen>
+    <dimen name="dialog_btn_marginBottom">-1dp</dimen>
+    <dimen name="dialog_btn_width">147dp</dimen>
+    <dimen name="dialog_progress_btn_width">160dp</dimen>
+    <dimen name="dialog_btn_height">48dp</dimen>
+    <dimen name="dialog_btn_marginLeft">0dp</dimen>
+    <dimen name="dialog_width">588dp</dimen>
+    <dimen name="dialog_height">200dp</dimen>
+    <dimen name="iv_dialog_title_margintop">-5dp</dimen>
+
+    <!-- 云同步首页 -->
+    <dimen name="tv_synch_home_suggest_margintop">330dp</dimen>
+    <dimen name="tv_synch_home_suggest_textsize">22sp</dimen>
+    <dimen name="iv_synch_home_itemwidth">310dp</dimen>
+    <dimen name="rl_synch_home_marginleft">-9dp</dimen>
+
+</resources>
