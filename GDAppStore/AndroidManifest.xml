@@ -1,0 +1,85 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.changhong.gdappstore"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="42"
+    android:versionName="4.2" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_TOP_ACTIVITY_INFO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <application
+        android:name="com.changhong.gdappstore.MyApplication"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:icon="@drawable/yupp_store_icon"
+        android:label="@string/app_name"
+
+        android:theme="@style/anim_zoom" >
+        <activity android:name=".activity.LoadingActivity"
+            android:theme="@style/anim_zoom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.IndiaMainActivity"
+            android:theme="@style/anim_zoom"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/anim_zoom"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.RankingListActivity" android:theme="@style/anim_zoom"/>
+        <activity android:name=".activity.SearchActivity" android:theme="@style/anim_zoom"/>
+        <activity android:name=".activity.PostActivity" android:theme="@style/anim_zoom"/>
+        <activity 
+            android:exported="true"
+            android:name=".activity.DetailActivity" android:theme="@style/anim_zoom"/>
+        <activity android:name=".activity.NativeAppActivity" android:theme="@style/anim_zoom"/>
+        <activity android:name=".activity.SynchronousActivity" android:theme="@style/anim_zoom"/>
+        <activity android:name=".activity.SynchBackUpActivity" android:theme="@style/anim_zoom"/>
+        <activity android:name=".activity.SynchRecoverActivity" android:theme="@style/anim_zoom"/>
+        <activity android:name=".activity.SynchManageActivity" android:theme="@style/anim_zoom"/>
+		<service android:name="com.changhong.gdappstore.service.SilentInstallService"></service>
+		<service android:name="com.changhong.gdappstore.service.SystemDialogService"></service>
+        <receiver
+            android:name="com.changhong.gdappstore.service.AppBroadcastReceiver"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.changhong.gdappstore.service.NetChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.changhong.gdappstore.listeners.ListeningBootBroadcastRec" >
+            <intent-filter>
+					<action android:name="android.intent.action.BOOT_COMPLETED" />  
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
